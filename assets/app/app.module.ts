@@ -15,6 +15,8 @@ import { SignupComponent } from "./auth/signup.component";
 import { AuthService } from "./auth/auth.service";
 import { MessageListComponent } from "./messages/message-list.component";
 import { MessageInputComponent } from "./messages/message-input.component";
+import { ErrorComponent } from "./errors/error.component";
+import { ErrorService } from "./errors/error.service";
 
 @NgModule({
     declarations: [
@@ -27,7 +29,8 @@ import { MessageInputComponent } from "./messages/message-input.component";
         SigninComponent,
         SignupComponent,
         MessageListComponent,
-        MessageInputComponent
+        MessageInputComponent,
+        ErrorComponent
     ],
     imports: [BrowserModule, 
               routing, 
@@ -35,7 +38,7 @@ import { MessageInputComponent } from "./messages/message-input.component";
               ReactiveFormsModule,
               HttpModule
     ],
-    providers: [AuthService],
+    providers: [AuthService, ErrorService],
     bootstrap: [AppComponent]
 })
 export class AppModule {
