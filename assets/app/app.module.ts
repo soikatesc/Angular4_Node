@@ -13,6 +13,8 @@ import { LogoutComponent } from "./auth/logout.component";
 import { SigninComponent } from "./auth/signin.component";
 import { SignupComponent } from "./auth/signup.component";
 import { AuthService } from "./auth/auth.service";
+import { MessageListComponent } from "./messages/message-list.component";
+import { MessageInputComponent } from "./messages/message-input.component";
 
 @NgModule({
     declarations: [
@@ -23,7 +25,9 @@ import { AuthService } from "./auth/auth.service";
         HeaderComponent,
         LogoutComponent,
         SigninComponent,
-        SignupComponent
+        SignupComponent,
+        MessageListComponent,
+        MessageInputComponent
     ],
     imports: [BrowserModule, 
               routing, 
